@@ -148,7 +148,7 @@
   <body>
     <div class="section">
       <!-- Background Music -->
-      <audio id="bg-music" loop preload="auto">
+      <audio id="bg-music" preload="auto" autoplay loop>
         <source src="music/Payung Teduh - Akad.mp3" type="audio/mpeg" />
       </audio>
 
@@ -209,6 +209,7 @@
     const music = document.getElementById('bg-music');
     const toggleBtn = document.getElementById('music-toggle-btn');
     music.volume = 0.7;
+    music.load();
 
     let isPlaying = false;
 
